@@ -133,8 +133,8 @@ class WebScraper {
     List<Element> elements = document.querySelectorAll(address);
     List<Map<String, dynamic>> elementData = [];
 
-    for (var element in elements) {
-      Map<String, dynamic> attribData = new Map<String, dynamic>();
+    for (Element element in elements) {
+      Map<String, dynamic> attribData = Map<String, dynamic>();
       for (String attrib in attribs) {
         attribData[attrib] = element.attributes[attrib];
       }
